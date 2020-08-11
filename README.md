@@ -2,4 +2,4 @@
 
 ##First_day
 
-###
+###Syntactic sugar
