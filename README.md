@@ -1,5 +1,5 @@
 # JavaScript_learning
 
-##First_day
+## First_day
 
-###Syntactic sugar
+### Syntactic sugar
