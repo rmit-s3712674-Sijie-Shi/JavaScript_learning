@@ -239,7 +239,13 @@ alert( parseInt('0xff', 16) ); // 255
 alert( parseInt('ff', 16) ); // 255  
 
 isFinite to transfer to number then test if it is number  
-isNaN to transfer to number then test if it is NaN  
+isNaN to transfer to number then test if it is NaN 
+
+    Math.floor	Math.ceil	Math.round	Math.trunc   
+3.1	    3	        4	        3	        3  
+3.6	    3	        4	        4	        3  
+-1.1	-2	        -1      	-1	        -1  
+-1.6	-2	        -1	        -2	        -1  
 
 #### String
 Base on the practices 
