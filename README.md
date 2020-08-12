@@ -101,3 +101,69 @@ if (age < 3) {
 } else {  
   message = 'What an unusual age!';  
 }  
+
+### ||
+一个或运算 "||" 的链，将返回第一个真值，如果不存在真值，就返回该链的最后一个值。  
+
+let firstName = "";  
+let lastName = "";  
+let nickName = "SuperCoder";  
+
+alert( firstName || lastName || nickName || "Anonymous"); // SuperCoder  
+
+### &&
+当两个操作数都是真值，与操作返回 true，否则返回 false  
+与运算符返回第一个假值，如果没有假值就返回最后一个值  
+The precedence of AND && is higher than ||, so it executes first.
+
+### !
+!! will convert value to boolean 
+
+### ??
+let firstName = null;  
+let lastName = null;  
+let nickName = "Supercoder";  
+
+// 显示第一个不是 null/undefined 的值  
+alert(firstName ?? lastName ?? nickName ?? "Anonymous"); // Supercoder  
+重要的区别是：  
+
+|| 返回第一个 真值。  
+?? 返回第一个 已定义的值。  
+
+let height = 0;  
+
+alert(height || 100); // 100  
+alert(height ?? 100); // 0  
+
+precedence is very low, a bit higher than ? and =  
+
+### label for break and continue in for loop
+
+labelName: for(;;){  
+    for(;;){  
+       if() break labelName   => jump outof the first for loop directly
+    }  
+}  
+
+### Object
+let user = new Object() => let user = {}  
+  
+const user = {
+    name: "..."
+    "like bird": false  
+}  
+user.name = "...." => it's ok even user is const  
+user = {...} => it's not eligible  
+user["like bird"] = true; delete user["like bird"] => needs brackets  
+  
+let key = "name"
+alert( user[key] );=>right  
+alert( user.key );=>wrong  
+
+let user = {  
+    name, => the same as name:name  
+    age:30  
+}  
+
+
