@@ -226,7 +226,32 @@ can't run, because the str is basic data type, not an object
 #### Number type
 1 billion = 1e9 => 1 and 9 zeros following by  
 0.001 = 1e-3 => 3 zeros behind 1  
+let num = 255  
+num.toString(16) => ff  
+num.toString(2) => 11111111  
 
+123456..toString(36) => not 123456.toString(36), can be (123456).toString(36)  
+num.toFixed(1) => remain the last one number after dot, 四舍五入  
 
+alert( parseFloat('12.3.4') ); // 12.3  
+alert( parseInt('100px') ); // 100  
+alert( parseInt('0xff', 16) ); // 255  
+alert( parseInt('ff', 16) ); // 255  
+
+isFinite to transfer to number then test if it is number  
+isNaN to transfer to number then test if it is NaN  
+
+#### String
+Base on the practices 
+
+#### Array
+对于栈来说，最后放进去的内容是最先接收的，也叫做 LIFO（Last-In-First-Out），即后进先出法则。而与队列相对应的叫做 FIFO（First-In-First-Out），即先进先出。  
+push 在末端添加一个元素.  
+pop 从末端取出一个元素.  
+shift 取出队列首端的一个元素，整个队列往前移，这样原先排第二的元素现在排在了第一  
+unshift Add element at the beginning  
+
+for (let item of arr) 遍历数组  
+for (let i in arr) — 永远不要用这个 => 这个提取的是key， like arr[i]  
 
 
