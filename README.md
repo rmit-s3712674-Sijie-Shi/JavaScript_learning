@@ -261,4 +261,7 @@ unshift Add element at the beginning
 for (let item of arr) 遍历数组  
 for (let i in arr) — 永远不要用这个 => 这个提取的是key， like arr[i]  
 
+const numbers1 = [1, 2, 3, 4, 5];
+const numbers2 = [ ...numbers1, 1, 2, 6,7,8]; // this will be [1, 2, 3, 4, 5, 1, 2, 6, 7, 8] => (...) also can be used in object https://www.techug.com/post/what-do-the-three-dots-mean-in-javascript.html
+
 
