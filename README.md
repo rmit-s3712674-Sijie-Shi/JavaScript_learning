@@ -241,12 +241,20 @@ alert( parseInt('ff', 16) ); // 255
 isFinite to transfer to number then test if it is number  
 isNaN to transfer to number then test if it is NaN 
 
-    Math.floor	Math.ceil	Math.round	Math.trunc   
+    	Math.ceil	Math.round	Math.trunc   
 3.1	    3	        4	        3	        3  
 3.6	    3	        4	        4	        3  
 -1.1	-2	        -1      	-1	        -1  
 -1.6	-2	        -1	        -2	        -1  
-
+| 表格      | Math.floor    | Math.ceil     |  Math.round    |  Math.trunc  |  
+| ---------- | :-----------:  | :-----------: | :-----------: | :-----------: |  
+| 3.1     | 3     |4     | 3     | 3     |  
+| ---------- | :-----------:  | :-----------: | :-----------: | :-----------: |  
+| 3.1     | 3     | 4     | 4     | 3     |
+| ---------- | :-----------:  | :-----------: | :-----------: | :-----------: |    
+| 3.1     | -2     | -1     | -1    | -1     |
+| ---------- | :-----------:  | :-----------: | :-----------: | :-----------: |    
+| 3.1     | -2     | -1     | -2     | -1     |
 #### String
 Base on the practices 
 
