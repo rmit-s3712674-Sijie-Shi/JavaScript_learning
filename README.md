@@ -257,11 +257,23 @@ push 在末端添加一个元素.
 pop 从末端取出一个元素.  
 shift 取出队列首端的一个元素，整个队列往前移，这样原先排第二的元素现在排在了第一  
 unshift Add element at the beginning  
-
+  
 for (let item of arr) 遍历数组  
 for (let i in arr) — 永远不要用这个 => 这个提取的是key， like arr[i]  
+arr.forEach() => iterate array
 
 const numbers1 = [1, 2, 3, 4, 5];
 const numbers2 = [ ...numbers1, 1, 2, 6,7,8]; // this will be [1, 2, 3, 4, 5, 1, 2, 6, 7, 8] => (...) also can be used in object https://www.techug.com/post/what-do-the-three-dots-mean-in-javascript.html
+Also this can be considered as a replacement of arr.concat(arg1,arg2)  
+let arr = [1, 2];  
+let arrayLike = {  
+  0: "something",  
+  1: "else",  
+  [Symbol.isConcatSpreadable]: true,  
+  length: 2  
+};  
+alert( arr.concat(arrayLike) ); // 1,2,something,else  
+
+
 
 
