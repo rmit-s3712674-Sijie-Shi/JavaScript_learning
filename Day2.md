@@ -4,7 +4,7 @@
 
 ### Array methods
 # 把array变成map就能提出里面的东西了，还可以编辑每一项东西！！！！
-
+# reduce能做很多map相似的事
 #### Searching in array  
 arr.indexOf() => the position of element  
 arr.includes() => return true or false  
