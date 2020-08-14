@@ -118,5 +118,29 @@ let sayHi = "sayHi"
 user[sayHi] = sayHifunc;  
 user[sayHi](); // Hello!  
 6.  
+let names = users.map(item=>item.name)  
 
+7.  
+let usersMapped = users.map(
+    item => ({
+        fullName:`${item.name} ${item.surname}`,
+        id:item.id
+    })
+)
 
+8.  
+sortByAge(arr){
+   return arr.sort((a, b)=>a.age-b.age)
+}
+
+9.  
+getAverageAge(arr){
+    return arr.reduce((prev,item)=>item.age+prev,0)/arr.length
+}
+10.  
+function groupById(array) {  
+  return array.reduce((obj, value) => {  
+    obj[value.id] = value;  
+    return obj;  
+  }, {})  
+}  
