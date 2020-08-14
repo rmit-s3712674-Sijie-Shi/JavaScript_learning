@@ -142,3 +142,61 @@ set.keys() —— 遍历并返回所有的值（returns an iterable object for v
 set.values() —— 与 set.keys() 作用相同，这是为了兼容 Map，  
 set.entries() —— 遍历并返回所有的实体（returns an iterable object for entries） [value, value]，它的存在也是为了兼容 Map。  
 
+1.  
+function unique(arr) {  
+  let set = new Set(arr)  
+  //alert(set.entries())  
+  let array = new Array  
+  for(value of set){  
+    //alert(value)  
+    array.push(value)  
+  }  
+  return array  
+}  
+or:  
+function unique(arr) {  
+  return Array.from(new Set(arr));  
+}  
+2.  
+function aclean(arr){  
+  let words = new Map  
+  for(word of arr){  
+    let modified = word.toLowerCase().split("").sort().join("")  
+    words.set(modified,word)  
+  }  
+  return Array.from(words.values())  
+}  
+3.  
+  
+### WeakMap and WeakSet
+#### WeakMap
+The key of WeakMap must be an object:  
+let weakMap = new WeakMap();  
+
+let obj = {};  
+
+weakMap.set(obj, "ok");  
+  
+weakMap only has:  
+weakMap.get(key)  
+weakMap.set(key, value)  
+weakMap.delete(key)  
+weakMap.has(key)  
+#### WeakSet  
+WeakSet 支持 add，has 和 delete 方法  
+No iterate  
+
+1.  
+let isRead = Symbol("isRead");  
+messages[0][isRead] = true;  
+
+2.  
+let messages = [  
+  {text: "Hello", from: "John"},  
+  {text: "How goes?", from: "John"},  
+  {text: "See you soon", from: "Alice"}  
+];  
+
+let readMap = new WeakMap();  
+
+readMap.set(messages[0], new Date(2017, 1, 1));  
