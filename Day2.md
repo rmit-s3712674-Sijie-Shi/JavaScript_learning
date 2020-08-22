@@ -13,7 +13,9 @@ arr.filter() => like let someUsers = users.filter(item => item.id < 3);
 
 #### Transform an array
 truning array into map, and can use methods in map:  
-let result = arr.map(item => item.length); => to get the length of each item in array  
+let result = arr.map(item => item.length); => to get the length of each item in array
+arr.map() will go through each element, can use every element with function and retrun a result of array.  
+  
 sort array:  
 let arr = [ 1, 2, 15 ];  
 arr.sort(); => result will be 1, 15, 2  
